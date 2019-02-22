@@ -1,0 +1,10 @@
+.hiddenQuiz{
+  display: none;
+}
+.pointer{
+  cursor:pointer;
+  color: #0088cc;
+}
+.pointer:hover{
+  text-decoration: underline;
+}
