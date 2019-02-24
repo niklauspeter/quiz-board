@@ -9,30 +9,38 @@
   </head>
   <body>
     <div class="container">
+      <div class="Genesis">
     <h1>Quiz Board</h1>
     <div>
       <p>click <span class="pointer">here</span> to begin the quiz</p>
     </div>
+  </div>
   <div class="hiddenQuiz">
-    <h1>Quiz Board</h1>
-    <p>Start the quiz when ready.<br> fill in where required and try and answer all questions</p>
+    <h1><div id="innerHeading">Quiz Board</div></h1>
+    <h4>Instructions</h4>
+    <ul>
+      <li><p>Start the quiz when ready.<br> </li>
+      <li>fill in where required and try and answer all questions</p></li>
+    </ul>
     <ol>
     <form>
+      <div class="well">
       <div class="1question">
         <li><p> What is the correct format for defining functions</p></li>
     <label>
-      <input type="radio" name="question1" value="false" checked >(function)</label><br>
+      <input type="radio" name="question1" value="false" >(function)</label><br>
       <label>
         <input type="radio" name="question1" value="true">function();</label><br>
         <label>
       <input type="radio" name="question1" value="false">event(function())</label>
       </div>
+    </div>
     </form>
     <form>
       <div class="2question">
         <li><p>Which of the following methods tells javascript not to run until the document has finished loading</p></li>
     <label>
-      <input type="radio" name="question2" value="true" checked>.ready(function())</label><br>
+      <input type="radio" name="question2" value="true">.ready(function())</label><br>
       <label>
         <input type="radio" name="question2" value="false" >.click(function())</label><br>
         <label>
@@ -40,21 +48,23 @@
       </div>
     </form>
     <form>
+      <div class="well">
       <div class="3question">
         <li><p>Which of the following commands can 'NOT' be used to add a green background to the document?</p></li>
     <label>
-      <input type="radio" name="question3" value="false" checked>$("body").addClass("green-background")</label><br>
+      <input type="radio" name="question3" value="false">$("body").addClass("green-background")</label><br>
       <label>
         <input type="radio" name="question3" value="false" >$("body").css("backround-color", "green");</label><br>
         <label>
       <input type="radio" name="question3" value="true" >$("body").addGreen-background(function()</label>
       </div>
+    </div>
     </form>
     <form>
       <div class="4question">
         <li><p> What method below will insert its argument as a sibling rather than the child of the element</p></li>
     <label>
-      <input type="radio" name="question4" value="true" checked>.before()</label><br>
+      <input type="radio" name="question4" value="true">.before()</label><br>
       <label>
         <input type="radio" name="question4" value="false" >.append()</label><br>
         <label>
@@ -62,21 +72,23 @@
       </div>
     </form>
     <form>
+      <div class="well">
       <div class="5question">
         <li><p>Which among these does not fall under a global scope ?</p></li>
     <label>
-      <input type="radio" name="question5" value="false" checked>A variable declared outside of a function</label><br>
+      <input type="radio" name="question5" value="false">A variable declared outside of a function</label><br>
       <label>
         <input type="radio" name="question5" value="true" >A variable declared within a function</label><br>
         <label>
       <input type="radio" name="question5" value="false">A variable declared within a function without using the "var" keyword</label>
       </div>
+    </div>
     </form>
     <form>
       <div class="6question">
         <li><p> What do we call the logic that handles all the calculations and manipulation of data? </p></li>
     <label>
-      <input type="radio" name="question6" value="true" checked>back-end logic</label><br>
+      <input type="radio" name="question6" value="true">back-end logic</label><br>
       <label>
         <input type="radio" name="question6" value="false" >front-end logic</label><br>
         <label>
