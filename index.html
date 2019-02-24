@@ -8,12 +8,38 @@
       <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div class="container">
     <h1>Quiz Board</h1>
     <div>
       <p>click <span class="pointer">here</span> to begin the quiz</p>
     </div>
   <div class="hiddenQuiz">
-    <p>this is a quiz</p>
+    <h1>Quiz Board</h1>
+    <p>Start the quiz when ready.<br> fill in where required and try and answer all questions</p>
+    <form>
+      <div class="1question">
+        <p>1 what is the correct format for defining functions</p>
+    <label>
+      <input type="radio" name="question1" value="false">(function)</label><br>
+      <label>
+        <input type="radio" name="question1" value="true" >function();</label><br>
+        <label>
+      <input type="radio" name="question1" value="false" checked>event(function())</label>
+      </div>
+    </form>
+    <form>
+      <div class="2question">
+        <p>1 what is the correct format for defining functions</p>
+    <label>
+      <input type="radio" name="question2" value="false" checked>(function)</label><br>
+      <label>
+        <input type="radio" name="question2" value="true" >function();</label><br>
+        <label>
+      <input type="radio" name="question2" value="false">event(function())</label>
+      </div>
+    </form>
+<button class= "btn" id="submit">submit</button>
+  </div>
   </div>
   </body>
 </html>
