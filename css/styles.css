@@ -18,3 +18,11 @@
   border: 2px solid-red;
   text-align: center;
 }
+.date{
+float:right;
+  margin-bottom: 50px;
+}
+.finals{
+  display:none;
+
+}
