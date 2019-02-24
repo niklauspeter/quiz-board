@@ -9,6 +9,8 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
   $("#submit").click(function(){
+    $(".finals").toggle();
+    $(".showResult").toggle();
   var answer1= $("input[name='question1']:checked").val();
   var answer2= $("input[name='question2']:checked").val();
   var answer3= $("input[name='question3']:checked").val();
@@ -32,6 +34,7 @@ if (answer4=="true"){
 if (answer5=="true"){
   result = result +20;
 }
-alert(result+ "%");
+$("#finalResult").text(result + "%");
+
 });
 });
