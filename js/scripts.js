@@ -14,7 +14,6 @@ $(document).ready(function(){
   var answer3= $("input[name='question3']:checked").val();
   var answer4= $("input[name='question4']:checked").val();
   var answer5= $("input[name='question5']:checked").val();
-  var answer6= $("input[name='question6']:checked").val();
   var result = 0;
 
 if (answer1== "true")
@@ -33,9 +32,6 @@ if (answer4=="true"){
 if (answer5=="true"){
   result = result +20;
 }
-if (answer6=="true"){
-  result = result +20;
-}
-alert(result);
+alert(result+ "%");
 });
 });
