@@ -16,14 +16,20 @@
     </div>
     </div>
     <div class="hiddenQuiz">
+      <div class="showResult">
       <h1><div id="innerHeading">Quiz Board</div></h1>
       <h4>Instructions</h4>
         <ul>
           <li><p>Start the quiz when ready.<br> </li>
-          <li>fill in where required and try and answer all questions</p></li>
+          <li>Fill your answer in the blank space next to the choices and try and answer all questions</p></li>
+          <li>Press submit when done and await results</li>
         </ul>
     <ol>
-    <form>
+      <div class="date">
+       <label for="born">Date of quiz:</label>
+       <input id="born" class="date" type="date">
+     </div>
+    <form id="form1">
       <div class="well">
       <div class="1question">
         <li><p> What is the correct format for defining functions</p></li>
@@ -79,6 +85,10 @@
     </form>
   </ol>
 <button class= "btn" id="submit">submit</button>
+</div>
+<div class="finals">
+<h5>YOUR FINAL SCORE IS: <span id="finalResult"></span></H5>
+</div>
   </div>
   </div>
   </body>
