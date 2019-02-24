@@ -16,9 +16,21 @@ $(document).ready(function(){
   var answer2= $("input[name='question2']:checked").val();
   var result = 0;
 
-  if (answer1== "true")
+if (answer1== "true")
 {
   result = result+ 20;
+}
+if (answer2=="true"){
+  result = result +20;
+}
+if (answer2=="true"){
+  result = result +20;
+}
+if (answer2=="true"){
+  result = result +20;
+}
+if (answer2=="true"){
+  result = result +20;
 }
 if (answer2=="true"){
   result = result +20;
