@@ -8,3 +8,6 @@
 .pointer:hover{
   text-decoration: underline;
 }
+#innerHeading{
+  align-self: center;
+}
