@@ -3,11 +3,11 @@
 
 $(document).ready(function(){
   $(".pointer").click(function(){
-    $(".hiddenQuiz").show();
+    $(".hiddenQuiz").toggle();
+    $(".Genesis").toggle();
   });
 });
 $(document).ready(function(){
-  alert("run");
   $("#submit").click(function(){
   var answer1= $("input[name='question1']:checked").val();
   var answer2= $("input[name='question2']:checked").val();
