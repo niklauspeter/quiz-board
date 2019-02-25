@@ -28,3 +28,13 @@ float:right;
   text-align: center;
 
 }
+#resultMessage{
+  color: red;
+}
+#submit{
+  color: purple;
+}
+#submit:hover{
+  cursor:pointer;
+  color: red;
+}
