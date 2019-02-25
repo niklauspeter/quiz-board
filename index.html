@@ -11,87 +11,85 @@
     <div class="container">
     <div class="Genesis">
       <h1>Quiz Board</h1>
-    <div>
-      <p>click <span class="pointer">here</span> to begin the quiz</p>
+    <div class="introPage">
+      <h4>Click <span class="pointer">here</span> to begin the quiz!</h4>
     </div>
     </div>
     <div class="hiddenQuiz">
       <div class="showResult">
       <h1><div id="innerHeading">Quiz Board</div></h1>
-      <h4>Instructions</h4>
+      <div id="instructions">
+        <h4><strong><span id="notice">Instructions</span></strong></h4>
         <ul>
-          <li><p>Start the quiz when ready.<br> </li>
-          <li>Fill your answer in the blank space next to the choices and try and answer all questions</p></li>
-          <li>Press submit when done and await results</li>
+          <li><p><strong>Start the quiz when ready</strong>.<br> </li>
+          <li><strong>Fill your answer in the blank space next to the choices and try and answer all questions</strong></p></li>
+          <li><strong>Press submit when done and await results</strong></li>
         </ul>
+      </div>
     <ol>
-      <div class="date">
-       <label for="born">Date of quiz:</label>
-       <input id="born" class="date" type="date">
-     </div>
     <form id="form1">
       <div class="well">
       <div class="1question">
         <li><p> What is the correct format for defining functions</p></li>
-    <label><input type="radio" name="question1" value="false" >(function)</label><br>
-    <label><input type="radio" name="question1" value="true">function();</label><br>
-    <label><input type="radio" name="question1" value="false">event(function())</label>
+          <label><input type="radio" name="question1" value="false" >(function)</label><br>
+          <label><input type="radio" name="question1" value="true">function();</label><br>
+          <label><input type="radio" name="question1" value="false">event(function())</label>
       </div>
       </div>
     </form>
     <form>
       <div class="2question">
         <li><p>Which of the following methods tells javascript not to run until the document has finished loading</p></li>
-    <label><input type="radio" name="question2" value="true">.ready(function())</label><br>
-    <label><input type="radio" name="question2" value="false" >.click(function())</label><br>
-    <label><input type="radio" name="question2" value="false">.show()</label>
+          <label><input type="radio" name="question2" value="true">.ready(function())</label><br>
+          <label><input type="radio" name="question2" value="false" >.click(function())</label><br>
+          <label><input type="radio" name="question2" value="false">.show()</label>
       </div>
     </form>
     <form>
       <div class="well">
       <div class="3question">
         <li><p>Which of the following commands can 'NOT' be used to add a green background to the document?</p></li>
-    <label><input type="radio" name="question3" value="false">$("body").addClass("green-background")</label><br>
-    <label><input type="radio" name="question3" value="false" >$("body").css("backround-color", "green");</label><br>
-    <label><input type="radio" name="question3" value="true" >$("body").addGreen-background(function()</label>
+          <label><input type="radio" name="question3" value="false">$("body").addClass("green-background")</label><br>
+          <label><input type="radio" name="question3" value="false" >$("body").css("backround-color", "green");</label><br>
+          <label><input type="radio" name="question3" value="true" >$("body").addGreen-background(function()</label>
       </div>
       </div>
     </form>
     <form>
       <div class="4question">
         <li><p> What method below will insert its argument as a sibling rather than the child of the element</p></li>
-    <label><input type="radio" name="question4" value="true">.before()</label><br>
-    <label><input type="radio" name="question4" value="false" >.append()</label><br>
-    <label><input type="radio" name="question4" value="false">.prepend()</label>
+          <label><input type="radio" name="question4" value="true">.before()</label><br>
+          <label><input type="radio" name="question4" value="false" >.append()</label><br>
+          <label><input type="radio" name="question4" value="false">.prepend()</label>
       </div>
     </form>
     <form>
       <div class="well">
       <div class="5question">
         <li><p>Which among these does not fall under a global scope ?</p></li>
-    <label><input type="radio" name="question5" value="false">A variable declared outside of a function</label><br>
-    <label><input type="radio" name="question5" value="true" >A variable declared within a function</label><br>
-    <label><input type="radio" name="question5" value="false">A variable declared within a function without using the "var" keyword</label>
+          <label><input type="radio" name="question5" value="false">A variable declared outside of a function</label><br>
+          <label><input type="radio" name="question5" value="true" >A variable declared within a function</label><br>
+          <label><input type="radio" name="question5" value="false">A variable declared within a function without using the "var" keyword</label>
       </div>
       </div>
     </form>
     <form>
       <div class="6question">
         <li><p> What do we call the logic that handles all the calculations and manipulation of data? </p></li>
-    <label><input type="radio" name="question6" value="true">back-end logic</label><br>
-    <label><input type="radio" name="question6" value="false" >front-end logic</label><br>
-    <label><input type="radio" name="question6" value="false">user interface logic</label>
+          <label><input type="radio" name="question6" value="true">back-end logic</label><br>
+          <label><input type="radio" name="question6" value="false" >front-end logic</label><br>
+          <label><input type="radio" name="question6" value="false">user interface logic</label>
       </div>
     </form>
   </ol>
-<button class= "btn" id="submit">submit</button>
-</div>
-<div class="finals">
-  <div class="jumbotron">
-<h4>YOUR FINAL SCORE IS: <span id="finalResult"></span></h4>
-<h5><span id="resultMessage"></span></h5>
-</div>
-</div>
+    <button class= "btn" id="submit">submit</button>
+  </div>
+  <div class="finals">
+    <div class="jumbotron">
+      <h4>YOUR FINAL SCORE IS: <span id="finalResult"></span></h4>
+      <h5><span id="resultMessage"></span></h5>
+    </div>
+  </div>
   </div>
   </div>
   </body>
