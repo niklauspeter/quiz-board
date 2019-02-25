@@ -34,5 +34,14 @@ if (answer5=="true"){
 }
 $("#finalResult").text(result + "%");
 
+if(result >= 80){
+  $("#resultMessage").text("You have passed congratulations!");
+}
+else if(result>=50 && result<80){
+  $("#resultMessage").text("You have passed fairly!");
+}
+else if(result<50){
+  $("#resultMessage").text("You have failed miserably my friend! You have brought shame upon your father! Repeat the test immediately!");
+}
 });
 });
